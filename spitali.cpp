@@ -25,3 +25,4 @@ void processDigital(queue<string> q) {
 }
 processManual(patients);
 processDigital(patients);
+cout << "\nConclusion: Digital systems are faster and more efficient.\n";
