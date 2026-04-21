@@ -16,3 +16,10 @@ void processManual(queue<string> q) {
         this_thread::sleep_for(chrono::milliseconds(800));
     }
 }
+void processDigital(queue<string> q) {
+    while (!q.empty()) {
+        cout << "Processing: " << q.front() << endl;
+        q.pop();
+        this_thread::sleep_for(chrono::milliseconds(200));
+    }
+}
