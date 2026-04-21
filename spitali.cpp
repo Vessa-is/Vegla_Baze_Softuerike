@@ -3,11 +3,7 @@
 #include <thread>
 #include <chrono>
 
-queue<string> patients;
-
-patients.push("Patient A");
-patients.push("Patient B");
-patients.push("Patient C");
+using namespace std;
 
 void processManual(queue<string> q) {
     while (!q.empty()) {
@@ -16,6 +12,7 @@ void processManual(queue<string> q) {
         this_thread::sleep_for(chrono::milliseconds(800));
     }
 }
+
 void processDigital(queue<string> q) {
     while (!q.empty()) {
         cout << "Processing: " << q.front() << endl;
@@ -23,6 +20,18 @@ void processDigital(queue<string> q) {
         this_thread::sleep_for(chrono::milliseconds(200));
     }
 }
-processManual(patients);
-processDigital(patients);
-cout << "\nConclusion: Digital systems are faster and more efficient.\n";
+
+int main() {
+    queue<string> patients;
+
+    patients.push("Patient A");
+    patients.push("Patient B");
+    patients.push("Patient C");
+
+    processManual(patients);
+    processDigital(patients);
+
+    cout << "\nConclusion: Digital systems are faster and more efficient.\n";
+
+    return 0;
+}
