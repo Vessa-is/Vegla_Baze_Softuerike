@@ -23,3 +23,5 @@ void processDigital(queue<string> q) {
         this_thread::sleep_for(chrono::milliseconds(200));
     }
 }
+processManual(patients);
+processDigital(patients);
