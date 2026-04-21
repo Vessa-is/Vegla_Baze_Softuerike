@@ -9,9 +9,9 @@ Programi përdor strukturën e radhës (queue) për të simuluar pacientët që 
 
 ## 🎯 Qëllimi
 Qëllimi i këtij projekti është:
-- Të tregojë se sistemet manuale janë më të ngadalta dhe më pak efikase  
-- Të demonstrojë përparësitë e sistemeve digjitale  
-- Të paraqesë një simulim të thjeshtë të një problemi real përmes C++  
+- Të tregojë se sistemet manuale janë më të ngadalta dhe më pak efikase.  
+- Të demonstrojë përparësitë e sistemeve digjitale.
+- Të paraqesë një simulim të thjeshtë të një problemi real përmes C++.  
 
 ---
 
@@ -63,5 +63,3 @@ Processing: Patient B
 Processing: Patient C
 
 Përfundim: Sistemet digjitale janë më të shpejta dhe më efikase.
-
-Testing merge 101 
